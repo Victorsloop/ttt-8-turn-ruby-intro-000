@@ -40,6 +40,5 @@ end
 #Accepts board and index from user marking their position
 def move(board,index,spot = "X")
   board[index] = spot
-  return board 
+  return board
 end 
-  
