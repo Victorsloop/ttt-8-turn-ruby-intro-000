@@ -45,7 +45,7 @@ end
 
 #Askn for a number until given a valud one
 def turn(board)
-  puts "Please enter a number 1-9:"
+  puts "Please enter 1-9:"
   num = gets.chomp
   index = input_to_index(num)
   if valid_move?(board, index) == true
