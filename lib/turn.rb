@@ -13,3 +13,26 @@ def input_to_index(input)
   index -= 1
   return index
 end
+
+#Accepts board and index from user and returns value
+def valid_move?(board, index)
+  def position_taken?(array, indx)
+    if  array[indx] == " " || array[indx] == "" || array[indx] == nil
+      return false
+    else
+      return true
+    end
+  end
+def on_board?(place)
+  if place.between?(0,8) == true
+    return true
+  else
+    return false
+  end
+end
+if position_taken?(board,index) == false && on_board?(index) == true
+  return true
+else
+  return false
+end
+end
