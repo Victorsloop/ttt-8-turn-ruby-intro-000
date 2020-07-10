@@ -41,4 +41,9 @@ end
 def move(board,index,spot = "X")
   board[index] = spot
   return board
-end 
+end
+
+#Askn for a number until given a valud one
+def turn(board)
+  puts "Please enter a number 1-9:"
+end
